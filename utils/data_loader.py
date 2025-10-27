@@ -23,12 +23,12 @@ def load_data(city):
 
     forecast_day = data["forecast"]["forecastday"][0]["hour"]
     hour = [hour["time"][-5:] for hour in forecast_day]
-    co_ = [hour["air_quality"]["co"] for hour in forecast_day]
-    no2_ = [hour["air_quality"]["no2"] for hour in forecast_day]
-    o3_ = [hour["air_quality"]["o3"] for hour in forecast_day]
-    so2_ = [hour["air_quality"]["so2"] for hour in forecast_day]
-    pm2_5_ = [hour["air_quality"]["pm2_5"] for hour in forecast_day]
-    pm10_ = [hour["air_quality"]["pm10"] for hour in forecast_day]
+    co_hour = [hour["air_quality"]["co"] for hour in forecast_day]
+    no2_hour = [hour["air_quality"]["no2"] for hour in forecast_day]
+    o3_hour = [hour["air_quality"]["o3"] for hour in forecast_day]
+    so2_hour = [hour["air_quality"]["so2"] for hour in forecast_day]
+    pm2_5_hour = [hour["air_quality"]["pm2_5"] for hour in forecast_day]
+    pm10_hour = [hour["air_quality"]["pm10"] for hour in forecast_day]
 
     return{
         'city_name': city_name,
@@ -42,11 +42,11 @@ def load_data(city):
         'us_epa_index': us_epa_index,
         'gb_defra_index': gb_defra_index,
         'hour': hour,
-        'co_': co_,
-        'no2_': no2_,
-        'o3_': o3_,
-        'so2_': so2_,
-        'pm2_5_': pm2_5_,
-        'pm10_':pm10_
+        'co_hour': co_hour,
+        'no2_hour': no2_hour,
+        'o3_hour': o3_hour,
+        'so2_hour': so2_hour,
+        'pm2_5_hour': pm2_5_hour,
+        'pm10_hour':pm10_hour
     }
    

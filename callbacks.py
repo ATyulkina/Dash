@@ -33,32 +33,32 @@ def register_callbacks(app):
         ])
 
         co_fig = go.Figure(
-            data=go.Scatter(x=data['hour'], y=data['co_'], mode='lines+markers'),
+            data=go.Scatter(x=data['hour'], y=data['co_hour'], mode='lines+markers'),
             layout=go.Layout(title='Концентрация CO по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
         
         no2_fig = go.Figure(
-            data=go.Scatter(x=data['hour'], y=data['no2_'], mode='lines+markers'),
+            data=go.Scatter(x=data['hour'], y=data['no2_hour'], mode='lines+markers'),
             layout=go.Layout(title='Концентрация NO₂ по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
 
         o3_fig = go.Figure(
-            data=[go.Scatter(x=data['hour'], y=data['o3_'], mode='lines+markers')],
+            data=[go.Scatter(x=data['hour'], y=data['o3_hour'], mode='lines+markers')],
             layout=go.Layout(title='Концентрация O₃ по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
 
         so2_fig = go.Figure(
-            data=[go.Scatter(x=data['hour'], y=data['so2_'], mode='lines+markers')],
+            data=[go.Scatter(x=data['hour'], y=data['so2_hour'], mode='lines+markers')],
             layout=go.Layout(title='Концентрация SO₂ по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
 
         pm2_5_fig = go.Figure(
-            data=[go.Scatter(x=data['hour'], y=data['pm2_5_'], mode='lines+markers')],
+            data=[go.Scatter(x=data['hour'], y=data['pm2_5_hour'], mode='lines+markers')],
             layout=go.Layout(title='Концентрация PM2.5 по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
 
         pm10_fig = go.Figure(
-            data=[go.Scatter(x=data['hour'], y=data['pm10_'], mode='lines+markers')],
+            data=[go.Scatter(x=data['hour'], y=data['pm10_hour'], mode='lines+markers')],
             layout=go.Layout(title='Концентрация PM10 по часам', xaxis_title='Время', yaxis_title='Концентрация (мкг/м³)', template='gridon')
         )
         
