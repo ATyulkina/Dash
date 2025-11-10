@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #ddfffd;
+    background-color: #1A0933;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.header {
+    text-align: center;
+    color: #1A0933;
+    background-color: #bea9de;
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    font-size: 26px
+}
+
+.filter-label {
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 20px
+}
+
+.filter-dropdown {
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #38146D;
+    
+
+}
+
+.dash-graph {
+    text-align: center;
+    background-color: #1A0933;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    min-height: 100px;
+    max-width: 1200px;
+}
+
+.dash-card {
+    text-align: center;
+    background-color: #38146D;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ddfffd;
+    height: 10;
+
+}
+
+.card {
+    text-align: center;
+    background-color: #38146D;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ddfffd;
+    font-size: 4px;
+    text-align: left;
+    height: 150px;
+
+}
