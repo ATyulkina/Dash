@@ -20,6 +20,18 @@ body {
     font-size: 26px
 }
 
+.city {
+    text-align: left;
+    background-color: #38146D;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ddfffd;
+    height: 10;
+    font-size: 20px
+}
+
+
 .filter-label {
     text-align: center;
     margin-top: 50px;
@@ -58,9 +70,9 @@ body {
 
 }
 
-.card {
+.card-1 {
     text-align: center;
-    background-color: #38146D;
+    background-color: #260d4b;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,5 +80,19 @@ body {
     font-size: 4px;
     text-align: left;
     height: 150px;
+
+}
+
+.card {
+    text-align: center;
+    background-color: #260d4b;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ddfffd;
+    font-size: 4px;
+    text-align: left;
+    height: 150px;
+    
 
 }

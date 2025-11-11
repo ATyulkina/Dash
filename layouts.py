@@ -7,9 +7,9 @@ def create_layout():
 
         dbc.Row([
             dbc.Col(dbc.Card(id='air-quality-output', body=True, className='dash-card'), width=3, md=3, xs=12),
-            dbc.Col(dbc.Card(id='us_epa-output', body=True, className='card'), width=3),
-            dbc.Col(dbc.Card(id='uk_defra-output', body=True, className='card'), width=3),
-            dbc.Col(dbc.Input(id='city-input', value='Saint Peterburg', placeholder='Введите город', type='text', debounce=True, className='dash-card'), width=3, md=3, xs=12)
+            dbc.Col(dbc.Card(id='us_epa-output', body=True, className='card-1'), width=3),
+            dbc.Col(dbc.Card(id='uk_defra-output', body=True, className='card-1'), width=3),
+            dbc.Col(dbc.Input(id='city-input', value='Saint Peterburg', placeholder='Введите город', type='text', debounce=True, className='city'), width=3, md=3, xs=12)
         ], className='mb-3'),
         dbc.Row([
             dbc.Col(dbc.Card(id='co-output', body=True, className='card')),
@@ -25,8 +25,8 @@ def create_layout():
                     dcc.Dropdown(id="day-input", className='filter-dropdown',
                                 options=[
                                     {'label': 'Сегодня', 'value': 0},
-                                    {'label': 'Завтра', 'value': 1},
-                                    {'label': 'Послезавтра', 'value': 2},
+                                    {'label': 'Завтра', 'value': 2},
+                                    {'label': 'Послезавтра', 'value': 3},
                                     ],
                                 value=0,  # значение по умолчанию
                                 )], md=2, )]),

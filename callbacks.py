@@ -94,7 +94,7 @@ def register_callbacks(app):
             html.Br(),
             html.Br(),
             html.Br(),
-            html.H4(f'{data['us_epa_index']} мкг/м³')
+            html.H2(f'{data['us_epa_index']} ')
         ])
 
         uk_defra_info = html.Div([
@@ -103,7 +103,7 @@ def register_callbacks(app):
             html.Br(),
             html.Br(),
             html.Br(),
-            html.H4(f'{data['gb_defra_index']} мкг/м³')
+            html.H2(f'{data['gb_defra_index']} ')
         ])
 
 
